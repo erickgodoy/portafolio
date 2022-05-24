@@ -193,6 +193,68 @@ body::-webkit-scrollbar-thumb:active {
     width: 50px;
 }
 
+.item{
+    position: relative;
+}
+
+.item .item-content,
+.item:after{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+
+}
+
+
+.item:after{
+    content: '';
+    display: block;
+    background: #212529;
+    top: 0px;
+    bottom: 0px;
+    opacity: 0;
+    transform: scaleY(1);
+    transition: .4s;
+}
+
+.item:hover:after{
+    opacity: .8;
+}
+
+.item-content{
+    top: 45%;
+
+    opacity: 0;
+    z-index: 1;
+    transition: .3s;
+    color: #f3f3f3;
+}
+
+
+.item:hover .item-content{
+    opacity: 1;
+    transform: translate(0,-50%);
+    transition-delay: .3s;
+}
+
+.item-content .button{
+    background-color: #0d6efd;
+    text-decoration: none;
+    color: #f3f3f3;
+    font-size: 120%;
+    padding: 0.4rem 2.5rem;
+    text-transform: uppercase;
+    bottom: 1rem;
+}
+
+.item-content .button:hover{
+    background-color:#0c5eda;
+}
+
+.button:focus{
+    box-shadow:inset 0 0 5px rgba(0,0,0,0.75)
+}
+
 /* Background icons */
 .fb-color:hover {
     color: white;
@@ -253,6 +315,7 @@ body::-webkit-scrollbar-thumb:active {
     .mTopName {
         margin-top: 90px;
     }
+
 }
 
 @media only screen and (max-width: 993px) {
@@ -275,5 +338,5 @@ body::-webkit-scrollbar-thumb:active {
         grid-template-columns: repeat(2, 1fr);
         padding: 2rem 50px;
     }
-}
 
+}

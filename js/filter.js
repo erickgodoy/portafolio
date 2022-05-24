@@ -1,5 +1,5 @@
 // init Isotope
-var $grid = $('#product-list').isotope({
+var $grid = $('#item-list').isotope({
     // options
   });
   // filter items on button click
