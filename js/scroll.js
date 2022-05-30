@@ -12,11 +12,11 @@ $(document).ready(function() {
         return false;
     });
     $('#btnPortfolio').click(function() { 
-        $('html, body').animate({ scrollTop: 1750 }, 'slow');
+        $('html, body').animate({ scrollTop: 1650 }, 'slow');
         return false;
     });
     $('#btnContact').click(function() { 
-        $('html, body').animate({ scrollTop: 1945 }, 'slow');
+        $('html, body').animate({ scrollTop: 1910 }, 'slow');
         return false;
     });
 });
@@ -36,7 +36,7 @@ window.addEventListener('scroll', () => {
         $('#btnSkills').addClass('text-white fw-bold');
     }
 
-    if (scrollVertical >= 1650) {
+    if (scrollVertical >= 1550) {
         $('#btnHome, #btnAbout, #btnSkills, #btnContact').removeClass('text-white fw-bold');
         $('#btnPortfolio').addClass('text-white fw-bold');
     }

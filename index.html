@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="https://i.ibb.co/tpck5y3/icons8-portafolio-32.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -19,13 +20,15 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top  ">
         <div class="container container-fluid">
             <a class="navbar-brand" href="#">ErickGodoy <i class="fas fa-laptop-code ml-3"></i></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto me-0">
                     <li class="nav-item ">
-                        <a id="btnHome" class="nav-link  text-white fw-bold" href="">Inicio</a>
+                        <a id="btnHome" class="nav-link text-white fw-bold" href="">Inicio</a>
                     </li>
                     <li class="nav-item ">
                         <a id="btnAbout" class="nav-link " href="">Acerca de mí</a>
@@ -43,6 +46,7 @@
             </div>
         </div>
     </nav>
+
     <div class="container mt-3">
         <div class="triangulo postri-1"></div>
         <div class="circulo poscir-1"></div>
@@ -56,7 +60,7 @@
                 <div class="mb-3 mt-2 row">
                     <div class=" p-3 col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-8 offset-sm-2 col-8 offset-2">
                         <img class="img-fluid rounded-circle border border-secondary mx-auto shadow"
-                            src="http://www.copabisi.com/images/person_22.jpg" alt="not found img">
+                            src="img/profile.jpg" alt="not found img">
                     </div>
                 </div>
             </div>
@@ -72,7 +76,7 @@
                             Mail me
                         </a>
                         <a target="_blank" class="btn btn-success mb-2 btn-sm mt-2"
-                            href="https://drive.google.com/file/d/1R3FEiupkzi2GQObPLIJqg_ncRBGUsp-C/view?usp=sharing">
+                            href="https://drive.google.com/file/d/1QdF_9KXV8rK6z0vLhZq58lp8qDItG16E/view?usp=sharing">
                             <i class="fas fa-arrow-alt-circle-down"></i>
                             Download CV
                         </a>
@@ -128,16 +132,16 @@
                 <h3 class="">Más sobre mí</h3>
                 <hr>
                 <p class="justificado">Mi nombre es Erick Renán Godoy Llanqui, tengo 21 años, actualmente resido en la
-                    ciudad de Puno – Perú. Soy autodidacta, me gusta aprender cosas nuevas y adquirir nuevas habilidades en
+                    ciudad de Puno – Perú. Soy autodidacta, me gusta aprender cosas nuevas y adquirir nuevas habilidades
+                    en
                     función a las actuales y futuras demandas y tendencias tecnologías en el campo del desarrollo de
                     software.</p>
-                <p class="justificado">Estudié en la Universidad Nacional del Altiplano donde obtuve el grado de
+                <p class="justificado">Estudié en la Universidad Nacional del Altiplano de Puno donde obtuve el grado de
                     BACHILLER EN INGENIERÍA DE SISTEMAS.</p>
                 <p class="justificado">Apasionado por la tecnología, la innovación y el trabajo en equipo.</p>
             </div>
-            <div class="d-flex align-items-center col-lg-4 offset-lg-0 col-md-8 offset-md-2 fhoto">
-                <img src="https://scontent-lim1-1.xx.fbcdn.net/v/t1.15752-9/279360302_986005752051884_5696349209930367861_n.png?_nc_cat=105&ccb=1-5&_nc_sid=ae9488&_nc_ohc=vkUewdwh-nYAX_oGlut&_nc_ht=scontent-lim1-1.xx&oh=03_AVLPuP0JvNaQhwouped5_ZDnMhJJu2NAnljYIhKhEhTsyg&oe=6298740C"
-                    alt="img not found" class=" img-fluid rounded  mx-auto ">
+            <div class="d-flex align-items-center col-lg-4 offset-lg-0 col-md-8 offset-md-2">
+                <img src="img/about_me.png" class="img-fluid mx-auto" alt="about me">
             </div>
         </div>
     </div>
@@ -155,7 +159,6 @@
                         </div>
                         <div class="zonD p-2">
                             <p class="fw-bold">HTML</p>
-                            <!-- <p class="ms-4 justificado">PHP, CSS, HTML, JS</p> -->
                         </div>
                     </div>
                     <div class="skill-box">
@@ -246,63 +249,56 @@
                 <button type="button" data-filter="*" class="btn btn-dark mx-1 text-dark">All</button>
                 <button type="button" data-filter=".sites" class="btn btn-dark mx-1 text-dark">Sites</button>
                 <button type="button" data-filter=".designs" class="btn btn-dark mx-1 text-dark">Designs</button>
-                <button type="button" data-filter=".applications" class="btn btn-dark mx-1 text-dark">Applications</button>
+                <button type="button" data-filter=".applications"
+                    class="btn btn-dark mx-1 text-dark">Applications</button>
             </div>
         </div>
         <div class="row g-4" id="item-list">
             <div class="col-sm-6 sites">
                 <div class="item">
-                        <img src="/img/p_iestp.png"
-                            class="img-fluid d-block mx-auto" alt="">
+                    <img src="/img/p_iestp.png" class="img-fluid mx-auto" alt="">
                     <div class="item-content text-center ">
-                        <!-- <span class="d-block text-uppercase fx-bold">name</span> -->
                         <h4>IESTP "SANTA ROSA"</h4>
                         <p>Pagina web realizada para una institución ubicada en la región de Puno, Perú</p>
                         <a class="button" href="https://www.iestpsantarosa.edu.pe/" target="_blank">Visit</a>
-
                     </div>
-
                 </div>
             </div>
-            <div class="col-sm-6 sites">
+            <div class="col-sm-6 applications">
                 <div class="item">
-                        <img src="/img/p_iestp.png"
-                            class="img-fluid d-block mx-auto" alt="">
+                    <img src="/img/p_gestorDisco.png" class="img-fluid  mx-auto" alt="">
                     <div class="item-content text-center">
-                        <span class="d-block text-uppercase fx-bold">name</span>
+                        <h4>GESTOR DE DISCO</h4>
+                        <p>Software desarrollado para simular el funcionamiento de las políticas de planificación SSTF,
+                            SCAN y C-LOOK</p>
+                        <a class="button" href="https://github.com/erickgodoy/Gestor-deDisco" target="_blank">Visit</a>
                     </div>
                 </div>
             </div>
             <div class="col-sm-6 designs">
                 <div class="item">
                     <div class="item-img">
-                        <img src="/img/p_iestp.png"
-                            class="img-fluid d-block mx-auto" alt="">
+                        <img src="/img/p_saiyagym.png" class="img-fluid mx-auto" alt="">
                     </div>
                     <div class="item-content text-center">
-                        <span class="d-block text-uppercase fx-bold">name</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 sites">
-                <div class="item">
-                    <div class="item-img">
-                        <img src="/img/p_iestp.png"
-                            class="img-fluid d-block mx-auto" alt="">
-                                          </div>
-                    <div class="item-content text-center">
-                        <span class="d-block text-uppercase fx-bold">name</span>
+                        <h4>SAIYAGYM</h4>
+                        <p>Diseño UI para el sistema de información de un gimnasio</p>
+                        <a class="button" href="https://www.figma.com/file/Hi4OWlJvFftSdnNt1Osbvn/SIM?node-id=0%3A1"
+                            target="_blank">Visit</a>
                     </div>
                 </div>
             </div>
             <div class="col-sm-6 applications">
                 <div class="item">
                     <div class="item-img">
-                        <img src="/img/p_iestp.png"
-                            class="img-fluid d-block mx-auto" alt="">
+                        <img src="/img/p_ppm.png" class="img-fluid mx-auto" alt="">
                     </div>
                     <div class="item-content text-center">
-                        <span class="d-block text-uppercase fx-bold">name</span>
+                        <h4>Planificador de Procesos y Memoria</h4>
+                        <p>Software desarrollado para simular el funcionamiento de las políticas de planificación de
+                            procesos y memoria</p>
+                        <a class="button" href="https://github.com/erickgodoy/Planificador-Procesos-Memoria"
+                            target="_blank">Visit</a>
                     </div>
                 </div>
             </div>
@@ -327,7 +323,7 @@
                 <a class="btn btn-link btn-floating btn-lg in-color m-1 big1"
                     href="https://www.instagram.com/erickgodoyll/" role="button" data-mdb-ripple-color="dark"
                     target="_blank"><i class="fab fa-instagram big2"></i></a>
-                <!-- Linkedin -->
+                <!-- LinkedIn -->
                 <a class="btn btn-link btn-floating btn-lg li-color m-1 big1"
                     href="https://www.linkedin.com/in/erick-godoy-b5a81b1a2/" role="button" data-mdb-ripple-color="dark"
                     target="_blank"><i class="fab fa-linkedin big2"></i></a>
@@ -356,6 +352,10 @@
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
     <script src="./js/scroll.js"></script>
     <script src="./js/filter.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
 
 </body>
+
 </html>
