@@ -217,46 +217,37 @@ body::-webkit-scrollbar-thumb:active {
     width: 50px
 }
 
-.item {
-    position: relative
-}
-
-.item .item-content,
-.item:after {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-}
-
-.item:after {
-    /* position: absolute; */
-    background: #212529;
-    content: '';
-    opacity: 0;
-    transform: scaleY(1);
-    transition: .4s
-}
-
-.item:hover:after {
-    opacity: .8
-}
-
-.item-content {
-    top: 45%;
-    opacity: 0;
-    z-index: 1;
-    transition: .3s;
+.item{
+    text-align: center;
+    position: relative;
     color: #f3f3f3;
-    padding: 15px
 }
 
-.item:hover .item-content {
+.item img{
+    width: 100%;
+}
+
+.item .item-content{
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    align-items: center;
+    padding-top: 12%;
+    transform: scaleY(0);
+    transition: .3s;
+    /* transition: all 0.5s ease 0s; */
+    opacity: 0;
+}
+
+.item:hover .item-content,
+.item.active .item-content{
     opacity: 1;
-    transform: translate(0, 20%);
-    transition-delay: .3s
-} 
+    transform: scaleY(1);
+    transition: .4s;
+}
 
 .item-content .button {
     background-color: #0d6efd;
