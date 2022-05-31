@@ -218,7 +218,7 @@ body::-webkit-scrollbar-thumb:active {
 }
 
 .item {
-      /* position: absolute */
+    position: relative
 }
 
 .item .item-content,
@@ -231,7 +231,7 @@ body::-webkit-scrollbar-thumb:active {
 }
 
 .item:after {
-    position: absolute;
+    /* position: absolute; */
     background: #212529;
     content: '';
     opacity: 0;
