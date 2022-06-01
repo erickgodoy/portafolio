@@ -219,7 +219,7 @@ body::-webkit-scrollbar-thumb:active {
 
 .item{
     background-color: #d6d6d6;
-    border-radius: 25px;
+    border-radius: 15px;
     height: 100%;
 }
 
