@@ -16,7 +16,7 @@ $(document).ready(function() {
         return false;
     });
     $('#btnContact').click(function() { 
-        $('html, body').animate({ scrollTop: 2310 }, 'slow');
+        $('html, body').animate({ scrollTop: 2350 }, 'slow');
         return false;
     });
 });
@@ -41,7 +41,7 @@ window.addEventListener('scroll', () => {
         $('#btnPortfolio').addClass('text-white fw-bold');
     }
 
-    if (scrollVertical >= 1720) {
+    if (scrollVertical >= 1920) {
         $('#btnHome, #btnAbout, #btnSkills, #btnPortfolio').removeClass('text-white fw-bold');
         $('#btnContact').addClass('text-white fw-bold');
     }
