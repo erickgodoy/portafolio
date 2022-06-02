@@ -16,7 +16,7 @@ $(document).ready(function() {
         return false;
     });
     $('#btnContact').click(function() { 
-        $('html, body').animate({ scrollTop: 2110 }, 'slow');
+        $('html, body').animate({ scrollTop: 2310 }, 'slow');
         return false;
     });
 });
